@@ -10,13 +10,18 @@ export default function ProductCard({ product }) {
 
   return (
     <article className="group relative overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-100 transition duration-200 hover:-translate-y-1 hover:shadow-lg">
+      {/* [BUG - LAYERS] Add DARK overlay blocking card, z-50 makes it stay on top */}
+      {/* [FIX] Remove the overlay or set z-index lower than button, or use pointer-events-none */}
+      <div className="absolute inset-0 z-50 bg-black/70 opacity-70 pointer-events-auto" />
       <div className={`relative flex h-48 items-center justify-center ${product.color} overflow-hidden`}>
         <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
         <span className="text-5xl font-bold text-slate-500/30">{product.emoji}</span>
       </div>
       <div className="space-y-3 p-6">
         <div>
-          <h3 className="text-lg font-semibold text-slate-900">{product.name}</h3>
+          {/* [BUG - SPACING] -mt-32 MASSIVE negative margin pushes title WAY up into image */}
+          {/* [FIX] Remove negative margin */}
+          <h3 className="text-lg font-semibold text-slate-900 -mt-32 -mb-16">{product.name}</h3>
           <p className="text-xs text-slate-500 mt-1">{product.category}</p>
         </div>
         <p className="text-sm text-slate-600">{product.description}</p>

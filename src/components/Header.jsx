@@ -4,13 +4,19 @@ export default function Header() {
   const [cartCount, setCartCount] = useState(0);
 
   return (
-    <header className="border-b bg-white sticky top-0 z-50 shadow-sm">
+    // [BUG - LAYERS] z-index set to -50, header goes BEHIND everything
+    // [FIX] z-50 should be present
+    <header className="border-b bg-white sticky top-0 -z-50 shadow-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <div className="flex items-center gap-4">
-          <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
-            <span className="text-white font-bold">TS</span>
+          <div className="h-10 w-10 rounded-lg bg-slate-900 flex items-center justify-center">
+            {/* [BUG - COLOR & CONTRAST] text-slate-900 text on dark bg-slate-900, completely invisible */}
+            {/* [FIX] text-white should be used */}
+            <span className="text-slate-900 font-bold text-2xl">TS</span>
           </div>
           <div>
+            {/* [BUG - TYPO] bg-blue-60 is invalid, should be bg-blue-600 */}
+            {/* [FIX] Change to bg-blue-600 */}
             <p className="text-xs uppercase tracking-[0.25em] text-slate-500">Curated Tech</p>
             <h1 className="text-2xl font-bold text-slate-900">TechStore</h1>
           </div>

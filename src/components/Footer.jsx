@@ -7,7 +7,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <h3 className="font-semibold text-white">TechStore</h3>
-            <p className="text-sm">Your trusted source for premium tech equipment and accessories.</p>
+            {/* [BUG - COLOR & CONTRAST] text-slate-950 text on dark bg-slate-900, completely black on dark */}
+            {/* [FIX] Should be text-slate-400 or text-white */}
+            <p className="text-sm text-slate-950 font-bold">Your trusted source for premium tech equipment and accessories.</p>
           </div>
           <div>
             <h4 className="font-semibold text-white mb-4">Shop</h4>
@@ -38,7 +40,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-slate-800 mt-8 pt-8 text-center text-sm">
-          <p>&copy; 2026 TechStore. All rights reserved.</p>
+          {/* [BUG - TYPO] text-slate-99 is invalid, copyright text invisible */}
+          {/* [FIX] Change to text-slate-400 */}
+          <p className="text-slate-99 text-3xl font-black">&copy; 2026 TechStore. All rights reserved.</p>
         </div>
       </div>
     </footer>
