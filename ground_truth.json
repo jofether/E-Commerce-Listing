@@ -1,0 +1,105 @@
+{
+  "repository": "E-Commerce Listing",
+  "bugs": [
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 7,
+      "clean_code": "<header className=\"border-b bg-white sticky top-0 z-50 shadow-sm\">",
+      "buggy_code": "<header className=\"border-b bg-white sticky top-0 -z-50 shadow-sm\">",
+      "css_selector": "header",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "background-color",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 10,
+      "clean_code": "<div className=\"h-10 w-10 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center\">",
+      "buggy_code": "<div className=\"h-10 w-10 rounded-lg bg-slate-900 flex items-center justify-center\">",
+      "css_selector": ".bg-slate-900",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "color",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 11,
+      "clean_code": "<span className=\"text-white font-bold\">TS</span>",
+      "buggy_code": "<span className=\"text-slate-900 font-bold text-2xl\">TS</span>",
+      "css_selector": ".text-slate-900",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/FilterBar.jsx",
+      "line_number": 25,
+      "clean_code": "<div className=\"flex flex-wrap gap-3\">",
+      "buggy_code": "<div className=\"flex flex-nowrap gap-0 overflow-visible\">",
+      "css_selector": ".flex-nowrap",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "background-color",
+      "file_modified": "src/components/FilterBar.jsx",
+      "line_number": 32,
+      "clean_code": "? 'bg-blue-600 text-white'",
+      "buggy_code": "? 'bg-blue-99 text-white'",
+      "css_selector": ".bg-blue-99",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/ProductCard.jsx",
+      "line_number": 12,
+      "clean_code": "",
+      "buggy_code": "<div className=\"absolute inset-0 z-50 bg-black/70 opacity-70 pointer-events-auto\" />",
+      "css_selector": ".z-50",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/components/ProductCard.jsx",
+      "line_number": 19,
+      "clean_code": "<h3 className=\"text-lg font-semibold text-slate-900\">{product.name}</h3>",
+      "buggy_code": "<h3 className=\"text-lg font-semibold text-slate-900 -mt-32 -mb-16\">{product.name}</h3>",
+      "css_selector": ".h3",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "grid",
+      "file_modified": "src/components/Hero.jsx",
+      "line_number": 7,
+      "clean_code": "<div className=\"grid grid-cols-1 gap-8 md:grid-cols-2 items-center\">",
+      "buggy_code": "<div className=\"grid grid-cols-3 gap-2 items-center\">",
+      "css_selector": ".grid-cols-3",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/components/Hero.jsx",
+      "line_number": 11,
+      "clean_code": "<span className=\"inline-block px-4 py-1 rounded-full bg-white/20 text-sm font-semibold mb-4\">",
+      "buggy_code": "<span className=\"inline-block px-4 py-1 rounded-full bg-white/20 text-sm font-semibold mb-4 -my-20 -ml-12\">",
+      "css_selector": ".badge",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "color",
+      "file_modified": "src/components/Footer.jsx",
+      "line_number": 11,
+      "clean_code": "<p className=\"text-sm\">Your trusted source for premium tech equipment and accessories.</p>",
+      "buggy_code": "<p className=\"text-sm text-slate-950 font-bold\">Your trusted source for premium tech equipment and accessories.</p>",
+      "css_selector": ".text-slate-950",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    }
+  ]
+}
