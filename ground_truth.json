@@ -9,12 +9,12 @@
       "line_number": 7,
       "clean_code": "<header className=\"border-b bg-white sticky top-0 z-50 shadow-sm\">",
       "buggy_code": "<header className=\"border-b bg-white sticky top-0 -z-50 shadow-sm\">",
-      "css_selector": "header",
+      "css_selector": "header.border-b.bg-white.sticky.shadow-sm",
       "bounding_box": {
         "x": 0,
         "y": 0,
         "width": 1280,
-        "height": 81
+        "height": 400
       }
     },
     {
@@ -25,7 +25,7 @@
       "line_number": 10,
       "clean_code": "<div className=\"h-10 w-10 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center\">",
       "buggy_code": "<div className=\"h-10 w-10 rounded-lg bg-slate-900 flex items-center justify-center\">",
-      "css_selector": ".bg-slate-900",
+      "css_selector": "header div.rounded-lg",
       "bounding_box": {
         "x": 88,
         "y": 20,
@@ -41,7 +41,7 @@
       "line_number": 11,
       "clean_code": "<span className=\"text-white font-bold\">TS</span>",
       "buggy_code": "<span className=\"text-slate-900 font-bold text-2xl\">TS</span>",
-      "css_selector": ".text-slate-900",
+      "css_selector": "header div.rounded-lg span",
       "bounding_box": {
         "x": 94,
         "y": 24,
@@ -57,7 +57,7 @@
       "line_number": 25,
       "clean_code": "<div className=\"flex flex-wrap gap-3\">",
       "buggy_code": "<div className=\"flex flex-nowrap gap-0 overflow-visible\">",
-      "css_selector": ".flex-nowrap",
+      "css_selector": "div.flex.flex-col > div.flex",
       "bounding_box": {
         "x": 0,
         "y": 81,
@@ -73,7 +73,7 @@
       "line_number": 32,
       "clean_code": "? 'bg-blue-600 text-white'",
       "buggy_code": "? 'bg-blue-99 text-white'",
-      "css_selector": ".bg-blue-99",
+      "css_selector": "div.flex button:first-child",
       "bounding_box": {
         "x": 88,
         "y": 85,
@@ -89,7 +89,7 @@
       "line_number": 12,
       "clean_code": "",
       "buggy_code": "<div className=\"absolute inset-0 z-50 bg-black/70 opacity-70 pointer-events-auto\" />",
-      "css_selector": ".z-50",
+      "css_selector": "article.group.relative:first-of-type",
       "bounding_box": {
         "x": 88,
         "y": 834,
@@ -105,12 +105,12 @@
       "line_number": 19,
       "clean_code": "<h3 className=\"text-lg font-semibold text-slate-900\">{product.name}</h3>",
       "buggy_code": "<h3 className=\"text-lg font-semibold text-slate-900 -mt-32 -mb-16\">{product.name}</h3>",
-      "css_selector": ".h3",
+      "css_selector": "article.group.relative:first-of-type h3.text-lg.font-semibold",
       "bounding_box": {
         "x": 112,
-        "y": 922,
+        "y": 850,
         "width": 304,
-        "height": 28
+        "height": 150
       }
     },
     {
@@ -121,7 +121,7 @@
       "line_number": 7,
       "clean_code": "<div className=\"grid grid-cols-1 gap-8 md:grid-cols-2 items-center\">",
       "buggy_code": "<div className=\"grid grid-cols-3 gap-2 items-center\">",
-      "css_selector": ".grid-cols-3",
+      "css_selector": "section div.grid.items-center",
       "bounding_box": {
         "x": 88,
         "y": 177,
@@ -137,7 +137,7 @@
       "line_number": 11,
       "clean_code": "<span className=\"inline-block px-4 py-1 rounded-full bg-white/20 text-sm font-semibold mb-4\">",
       "buggy_code": "<span className=\"inline-block px-4 py-1 rounded-full bg-white/20 text-sm font-semibold mb-4 -my-20 -ml-12\">",
-      "css_selector": ".badge",
+      "css_selector": "div.grid span.inline-block.px-4.py-1.rounded-full.bg-white/20",
       "bounding_box": {
         "x": 40,
         "y": 175,
@@ -153,7 +153,7 @@
       "line_number": 11,
       "clean_code": "<p className=\"text-sm\">Your trusted source for premium tech equipment and accessories.</p>",
       "buggy_code": "<p className=\"text-sm text-slate-950 font-bold\">Your trusted source for premium tech equipment and accessories.</p>",
-      "css_selector": ".text-slate-950",
+      "css_selector": "footer p.text-sm",
       "bounding_box": {
         "x": 88,
         "y": 2279,
