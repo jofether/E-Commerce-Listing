@@ -1,0 +1,17 @@
+{
+  "actions": [
+    {
+      "name": "bug-4-OpenFilterBar",
+      "selector": "button.rounded-full.border.border-slate-200.text-slate-700"
+    },
+    {
+      "name": "bug-5-OpenFilterBar",
+      "selector": "button.rounded-full.border.border-slate-200.text-slate-700"
+    },
+    {
+      "name": "bug-7-RemoveOverlay",
+      "selector": "article.group.relative > div.absolute.inset-0.z-50",
+      "action_type": "remove"
+    }
+  ]
+}
