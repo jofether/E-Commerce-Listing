@@ -93,8 +93,8 @@
       "bug_type": "z-index",
       "file_modified": "src/components/ProductCard.jsx",
       "line_number": 12,
-      "neg_code": "",
-      "pos_code": "<div className=\"absolute inset-0 z-50 bg-black/70 opacity-70 pointer-events-auto\" />",
+      "neg_code": "<article className=\"group relative overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-100 transition duration-200 hover:-translate-y-1 hover:shadow-lg\"><div className={`relative flex h-48 items-center justify-center ${product.color} overflow-hidden`}>",
+      "pos_code": "<article className=\"group relative overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-100 transition duration-200 hover:-translate-y-1 hover:shadow-lg\"><div className=\"absolute inset-0 z-50 bg-black/70 opacity-70 pointer-events-auto\" /><div className={`relative flex h-48 items-center justify-center ${product.color} overflow-hidden`}>",
       "css_selector": "article.group.relative:first-of-type",
       "bounding_box": {
         "x": 88,
